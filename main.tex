@@ -1,0 +1,136 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{multicol}
+
+\linespread{1.05}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+% ---------- Section format ----------
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+% ---------- Helpers ----------
+\newcommand{\sepbar}{\vspace{3pt}\hrule\vspace{6pt}}
+\newcommand{\headername}[2]{%
+  \begin{center}
+    {\LARGE\bfseries #1}\\[2pt]
+    {\normalsize #2}
+  \end{center}\vspace{6pt}\sepbar
+}
+
+\newenvironment{tightitem}{%
+\begin{itemize}[leftmargin=1.2em,itemsep=2pt,topsep=2pt]
+}{\end{itemize}}
+
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+
+\begin{document}
+
+% ---------- Header ----------
+\headername{JUNSU KIM}{\textit{Curriculum Vitae}}
+
+\begin{center}
+\href{mailto:sam9732@kaist.ac.kr}{sam9732@kaist.ac.kr} \quad | \quad 010-8334-9528 \quad | \quad Daejeon, South Korea
+\end{center}
+\sepbar
+
+% ---------- Education ----------
+\section*{Education}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+\textbf{Korea Advanced Institute of Science and Technology (KAIST)} & Daejeon, South Korea \\
+B.S. in Electrical Engineering & Mar 2021 -- \textit{Expected Feb 2027} \\
+\end{tabular*}
+GPA: 4.10/4.3 (Major GPA: 4.20/4.3)
+
+
+
+\section*{Honors}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+KAIST \textbf{Presidential Fellowship} (15th) & Feb 2025 -- Present \\
+KAIST EE, \textbf{Dean’s List Award} & Spring 2024 \\
+\quad \textit{Awarded to the top 3\% of all EE students} & \\
+KAIST, \textbf{Freshman Dean’s List Award} & Fall 2021 \\
+\quad \textit{Awarded to the top 3\% of all freshman students} & \\
+
+Woon Hae Scholarship (12nd) & Feb 2025 -- Dec 2025 \\
+National Science \& Engineering Scholarship for Academic Excellence & Aug 2025 -- Present \\
+\end{tabular*}
+
+
+\section*{Activities}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+KAIST AI Studying Club (Include) & Sep 2024 -- Present \\
+Young Engineers Honor Society (YEHS) & Jan 2025 -- Present \\
+KAIST International Volunteer Club (SilverLining) & Mar 2025 -- Present \\
+KAIST Freshman Proctor & Feb 2024 -- Dec 2024 \\
+KAIST Freshman Tutoring Program (Calculus I) & Mar 2022 -- Jun 2022 \\
+\textit{Other Extracurriculars: Orchestra, Sports, Student Clubs} & \\
+\end{tabular*}
+
+\sepbar
+
+% ---------- Related Coursework ----------
+
+
+% 본문
+\section*{Related Coursework}
+
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=1.2em,itemsep=2pt,topsep=2pt]
+  \item EE202 Signals and Systems (A+)
+  \item EE209 Programming Structure for Electrical Engineering (A0)
+  \item EE303 Digital System Design (A+)
+  \item EE304 Electronic Circuits (A+)
+  \item EE381 Control System Engineering (A+)
+  \item EE432 Digital Signal Processing (A+)
+\end{itemize}
+\end{multicols}
+\sepbar
+
+% ---------- Experiences ----------
+\section*{Experiences}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+\textbf{Computer Vision Lab (CVLAB)} & Jun 2025 -- Present \\
+\end{tabular*}
+\textbf{Research Intern} (Advisor: Prof. Seungryong Kim, KAIST AI) \\
+\begin{itemize}[leftmargin=1.2em,itemsep=2pt,topsep=2pt]
+  \item Conducting research on 3D Vision: multi-view scene reconstruction pipelines integrating Gaussian Splatting and transformer-based depth estimation (VGGT / NoPoSplat)
+\end{itemize}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+\textbf{Video and Image Computing Lab (VICLAB)} & Dec 2024 -- Jun 2025 \\
+\end{tabular*}
+\textbf{Research Intern} (Advisor: Prof. Mun Churl Kim, KAIST EE) \\
+\begin{itemize}[leftmargin=1.2em,itemsep=2pt,topsep=2pt]
+  \item Reviewed object detection models (RCNN--YOLO, ViT)
+  \item Implemented baseline detectors for few-shot and anomaly detection tasks
+\end{itemize}
+
+\sepbar
+
+
+% ---------- Projects ----------
+\section*{Projects}
+(Details to be added)
+
+\sepbar
+
+% ---------- Skills ----------
+\section*{Skills}
+Programming: C/C++, Python, PyTorch \\
+English: TOEFL 101
+
+\end{document}
